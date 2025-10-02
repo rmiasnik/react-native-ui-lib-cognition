@@ -671,6 +671,7 @@ class Slider extends PureComponent<InternalSliderProps, State> {
   }
 }
 
+export {SliderProps} from './types';
 export default asBaseComponent<SliderProps>(Slider);
 
 const styles = StyleSheet.create({
