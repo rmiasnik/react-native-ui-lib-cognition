@@ -155,7 +155,7 @@ function View(props: ViewProps, ref: any) {
   }
 
   return (
-    //@ts-expect-error
+    // @ts-ignore - Complex union type from conditional ViewContainer (SafeAreaView | RNView | Animated | Reanimated)
     <ViewContainer
       accessibilityElementsHidden={inaccessible}
       importantForAccessibility={inaccessible ? 'no-hide-descendants' : undefined}

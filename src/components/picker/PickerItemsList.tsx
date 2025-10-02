@@ -15,7 +15,7 @@ import PickerItem from './PickerItem';
 import {Constants} from '../../commons/new';
 import PickerSelectionStatusBar from './PickerSelectionStatusBar';
 
-const keyExtractor = (_item: string, index: number) => index.toString();
+const keyExtractor = (_item: any, index: number) => index.toString();
 
 const PickerItemsList = (props: PickerItemsListProps) => {
   const {
