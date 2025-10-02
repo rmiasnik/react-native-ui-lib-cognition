@@ -19,7 +19,7 @@ import {extractAccessibilityProps} from '../../commons/modifiers';
 import {Colors} from '../../style';
 import View from '../view';
 import IncubatorSlider from '../../incubator/slider';
-import {SliderProps} from './types';
+import type {SliderProps} from './types';
 import Thumb from './Thumb';
 
 const TRACK_SIZE = 6;
@@ -671,6 +671,7 @@ class Slider extends PureComponent<InternalSliderProps, State> {
   }
 }
 
+// eslint-disable-next-line no-duplicate-imports
 export type {SliderProps} from './types';
 export default asBaseComponent<SliderProps>(Slider);
 
